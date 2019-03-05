@@ -9,31 +9,16 @@ import java.util.*;
 
 public class Quiz_Input_Output {
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        Set<String> set = new HashSet<>();
-        ArrayList<String> list = new ArrayList<>();
+        public static void main(String[] args) throws IOException {
+            String word = "POWER";
+            char[] array_word =  new char[word.length()];
 
-        int x = Integer.parseInt(st.nextToken());
-        int y = Integer.parseInt(st.nextToken());
-        for(int i = 0 ; i < x ; i++){
-            set.add(br.readLine());
-        }
+            System.out.println(array_word);
 
-        for(int i = 0; i < y ; i++){
-            String input = br.readLine();
-            if(set.contains(input)){
-                list.add(input);
+            for(int i=0; i<array_word.length; i++){
+                array_word[i]=(word.charAt(i));
+                System.out.println(array_word[i]);
             }
-        }
-
-        Collections.sort(list);
-
-        System.out.println(list.size());
-        for (String s : list) {
-            System.out.println(s);
-        }
 
 
     }
