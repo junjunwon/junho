@@ -1,0 +1,18 @@
+String[]
+
+String[] 객체 = new String[]{"dfdF","Dfd"}
+로 배열을 선언하고, 정렬을 할 경우
+Arrays.sort(객체)를 한다.
+length로 길이는 확인하고, 값은 객체[i]하면 된다.
+
+ArrayList
+
+ArrayList<String> 객체 = new ArrayList<String>();
+으로 배열을 생성하게 되면
+객체.add("ddfsf");로 배열을 추가해주고.
+
+정렬을 원할 경우
+Collections.sort(객체);를 한다.
+
+arraylist의 길이는 length가 아니라 객체.size()로 선언한다.
+또한 출력시 값은 객체.get()으로 얻어온다.
